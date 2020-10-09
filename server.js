@@ -34,24 +34,7 @@ app.post("/message",function(req,res){
       console.log(err)
 
 
-    }
-    else{
-      console.log("Data saved in the database")
-    }
-    async function makePostRequest() {
-
-    params = {
-    h_name: req.body.name,
-    age: req.body.age,
-    action: req.body.Address
-}
-
-    let res = await axios.post('https://testhclhack.herokuapp.com/add/', params);
-
-    console.log(res.data);
-}
-
-makePostRequest();
+    
   })
   res.redirect("/")
 })
